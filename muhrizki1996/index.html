@@ -14319,6 +14319,31 @@
     }
 
     /* BloggerSentral Recent Posts Image Gallery CSS End */
+
+    hr.solid-hr {
+      border: 2px solid;
+    }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 2px solid #f4f6f8;
+    }
+
+    .separator:not(:empty)::before {
+      margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+      margin-left: .25em;
+    }
   </style>
   <script>
     // Blogger Recent Posts Gallery by Bloggersentral.com
@@ -14428,7 +14453,12 @@
           </div>
         </div>
       </div>
-      <hr />
+      <div class="container-narrow">
+        <div class="separator"><span>Powered by <img
+              src="https://raw.githubusercontent.com/muhrizki1996/Pub-HTML-Muhammad-Rizki/main/muhrizki1996/images/blogger-logo.png"
+              width="75" alt="Blogger Logo"></span>
+        </div>
+      </div>
       <div class="section pt-3 pt-lg-5 px-2 px-lg-4" id="tentang">
         <div class="container-narrow">
           <div class="row">
